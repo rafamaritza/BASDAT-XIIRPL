@@ -35,7 +35,4 @@ var_dump($panjang);
 
 
 
-
-
-
 ?>

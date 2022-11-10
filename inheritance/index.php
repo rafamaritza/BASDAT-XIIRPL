@@ -9,7 +9,7 @@ class komputer {
     // fungsi /perasi membuat beli komputer
     public function beli_komputer(){
         return "Beli Komputer baru";
-    
+    }
 }
 
 // kelas turunan/extends dari class kmputer ke class laptop
