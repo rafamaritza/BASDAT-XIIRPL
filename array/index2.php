@@ -27,8 +27,11 @@ $siswa  = "caca rafa maritza uwuu";
 // impload fungsi kembalikannya expload
 // impload ada 2 paramenter : glue(penggabung), array sasaran yang akan kita gabung menjadi string
 
-$siswa_pintar = ['refa', 'agus', 'novan'];
+$siswa_pintar = ['refa', 'agus', 'novan'];//array
 
-echo implode(' wkwk ', $siswa_pintar)
+$siswa_jago= implode(' wkwk ', $siswa_pintar);//string
+
+
+
 
 ?>

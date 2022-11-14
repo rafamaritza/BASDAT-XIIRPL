@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    min-height: 4000px;
+}
+
+.wrapper {
+    height: 300px;
+    background: rgb(62, 165, 88);
+}
+
+.box-1 {
+    padding: 60px;
+    margin-left: 160px;
+}
+
+.box-1 .icon {
+    margin-top: -90px;
+    margin-left: 770px;
+}
+
+.box-1 .icon img {
+    width: 40px;
+}
+
+.box-1 h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.box-1 p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+img {
+    width: 350px;
+    margin-right: 0;
+    margin-top: 50px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.box-2 {
+    width: 550px;
+    background: #ffffff;
+    min-height: 393px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    margin-top: -398px;
+    border-radius: 0px 20px 20px 0px
+}
+
+.box-2 .judul {
+    padding-top: 35px;
+}
+
+.box-2 .judul h4.hello {
+    width: 25%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -50px;
+    padding: 7px;
+    background: rgb(87, 200, 116);
+    color: #FFFFFF;
+}
+
+.box-2 .judul p.nama {
+    font-size: 32px;
+    font-weight: 200;
+    margin-left: 30px;
+    margin-top: 70px;
+    color: #000;
+}
+
+.box-2 .judul p.job {
+    font-size: 26px;
+    font-weight: lighter;
+    margin-left: 30px;
+    color: rgb(161, 161, 161);
+}
+
+.garis {
+    width: 85%;
+    margin-left: 30px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border-top: 2px solid #c0c0c0;
+}
+
+.box-2 .judul p.umur {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.box-2 .judul p.email {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.box-2 .judul p.phone {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.box-2 .judul p.website {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.skills {
+    margin-top: 350px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(35, 171, 69);
+}
+
+.box-3 {
+    width: 780px;
+    padding: 60px;
+    margin-left: 220px;
+    background: #ffffff;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px rgba(35, 171, 69, 1);
+}
+
+.box-3 p {
+    font-size: 21px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.education {
+    margin-top: 100px;
+}
+
+.education h2 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(35, 171, 69);
+}
+
+.education .box-4 {
+    padding: 60px;
+    margin-left: 160px;
+}
+
+.education .box-tk {
+    width: 300px;
+    height: 100px;
+    background: white;
+    padding: 25px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border-top: 5px solid rgb(60, 176, 81);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.education .box-tk .segitigatk {
+    height: 0px;
+    width: 0px;
+    border-left: solid 20px white;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    margin-top: -115px;
+    margin-left: 325px;
+}
+
+.education .box-tk .lingkarantk {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: green;
+    margin-left: 351px;
+    margin-top: -30px;
+}
+
+.education .box-tk h4 {
+    font-size: 21px;
+    color: rgb(23, 114, 46);
+    line-height: 35px;
+}
+
+.education .box-tk p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.education .box-tk h5 {
+    width: 25%;
+    padding: 10px;
+    background: rgb(35, 171, 69);
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.education .box-sd {
+    width: 300px;
+    height: 100px;
+    background: white;
+    margin-top: -60px;
+    margin-left: 470px;
+    padding: 25px;
+    border-radius: 20px;
+    border-top: 5px solid rgb(60, 176, 81);
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.5);
+}
+
+.education .box-sd .segitigasd {
+    height: 0px;
+    width: 0px;
+    border-right: solid 20px rgb(255, 255, 255);
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    margin-top: -115px;
+    margin-left: -45px;
+}
+
+.education .box-sd .lingkaransd {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: green;
+    margin-left: -68px;
+    margin-top: -30px;
+}
+
+.education .box-sd h4 {
+    font-size: 21px;
+    color: rgb(23, 114, 46);
+    line-height: 35px;
+}
+
+.education .box-sd p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.education .box-sd h5 {
+    width: 25%;
+    padding: 10px;
+    background: rgb(35, 171, 69);
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.education .box-smp {
+    width: 300px;
+    height: 100px;
+    margin-top: -245px;
+    background: white;
+    padding: 25px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border-top: 5px solid rgb(60, 176, 81);
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.5);
+}
+
+.education .box-smp .segitigasmp {
+    height: 0px;
+    width: 0px;
+    border-left: solid 20px white;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    margin-top: -115px;
+    margin-left: 325px;
+}
+
+.education .box-smp .lingkaransmp {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: green;
+    margin-left: 351px;
+    margin-top: -30px;
+}
+
+.education .box-smp h4 {
+    font-size: 21px;
+    color: rgb(23, 114, 46);
+    line-height: 35px;
+}
+
+.education .box-smp p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.education .box-smp h5 {
+    width: 25%;
+    padding: 10px;
+    background: rgb(35, 171, 69);
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.education .box-smk {
+    width: 300px;
+    height: 100px;
+    background: white;
+    margin-top: -60px;
+    margin-left: 470px;
+    padding: 25px;
+    border-radius: 20px;
+    border-top: 5px solid rgb(60, 176, 81);
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.5);
+}
+
+.education .box-smk .segitigasmk {
+    height: 0px;
+    width: 0px;
+    border-right: solid 20px rgb(255, 255, 255);
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    margin-top: -115px;
+    margin-left: -45px;
+}
+
+.education .box-smk .lingkaransmk {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: green;
+    margin-left: -68px;
+    margin-top: -30px;
+}
+
+.education .box-smk h4 {
+    font-size: 21px;
+    color: rgb(23, 114, 46);
+    line-height: 35px;
+}
+
+.education .box-smk p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.education .box-smk h5 {
+    width: 25%;
+    padding: 10px;
+    background: rgb(35, 171, 69);
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.education .garis-vertikal {
+    width: 3px;
+    height: 480px;
+    box-shadow: 5px 5px 2px white;
+    margin-left: 430px;
+    margin-top: -260px;
+}
