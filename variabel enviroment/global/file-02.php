@@ -1,7 +1,7 @@
 <?php
 
 
-
+$nama = "Rafa Maritza";
 
 // syarat untuk menghubngkan file menggunakan require / include
 echo "file-02.php <br>";

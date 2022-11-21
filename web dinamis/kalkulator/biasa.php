@@ -11,7 +11,7 @@
     <form> <!-- bersifat GET secara default tanpaa harus method -->
         <input type="number" name="angka1">
         <select name="operator">
-            <option selected disabled>Pillih operator</option>
+            <option selected disabled>Pilih operator</option>
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>

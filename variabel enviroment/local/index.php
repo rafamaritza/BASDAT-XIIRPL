@@ -8,7 +8,7 @@ function halodunia(){
 
 }
 
-halodunia();
+halodunia(); //objek
 echo $nama ;
 
 
