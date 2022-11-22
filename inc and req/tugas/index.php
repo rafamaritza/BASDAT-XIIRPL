@@ -6,6 +6,4 @@ require ('pengalaman.php');
 require ('education.php');
 include ('footer.php');
 
-
-
 ?>

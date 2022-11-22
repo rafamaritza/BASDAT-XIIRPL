@@ -27,8 +27,6 @@ $days = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
 <body>
     <?php
     for ($hari = 0; $hari < count($days); $hari++){
-
-   
     ?>
     <div class="box">
         <?php echo $days[$hari];?>
