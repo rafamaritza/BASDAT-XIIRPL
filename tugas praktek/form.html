@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+
+    <form action="prosses.php" method="POST" enctype="multipart/form-data">
+        <div class="home">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>      
+                <td>
+                    <input type="checkbox" name="jurusan" value="RPL"> RPL
+                    <input type="checkbox" name="jurusan" value="AKL"> AKL
+                    <input type="checkbox" name="jurusan" value="OTKP">OTKP
+                    <input type="checkbox" name="jurusan" value="BDP">BDP
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Ayah</td>      
+                <td><input type="text" name="nama_ayah"></td>
+            </tr>
+            <tr>
+                <td>Nama Ibu</td>      
+                <td><input type="text" name="nama_ibu"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>      
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <td>Foto</td>      
+                <td><input type="file" name="foto"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Upload</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

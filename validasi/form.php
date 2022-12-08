@@ -7,7 +7,7 @@
         <title>Validasi Form</title>
     </head>
     <body>
-        <form action="proses.php">
+        <form action="prosses.php">
             <div>
                 <label>Nama(Harus input nama)</label><br>
                 <input type="text" value="<?php echo @$time->nama?>" name="nama">

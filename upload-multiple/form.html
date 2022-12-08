@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiple Files Upload</title>
+</head>
+<body>
+    <h1>Upload Multiple Files</h1>
+    <form action="prosses.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Pilih Gambar</label>
+            <input type="file" name="listGambar[]" accept="image/*" multiple>
+        </div>
+        <button style="margin-top: 10px;">Upload</button>
+    </form>
+</body>
+</html>
