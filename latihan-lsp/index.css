@@ -1,0 +1,44 @@
+.body {
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    margin-left: 140px;
+    margin-top: 15px;
+}
+
+.menu .btn-admin {
+    width: 530px;
+    height: 90px;
+    background: #f13848;
+    padding: 15px;
+}
+
+.menu .btn-admin:hover {
+    border: 1px solid #39aaeb;
+}
+
+.menu .btn-admin p a {
+    font-size: 26px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .btn-user {
+    width: 530px;
+    height: 90px;
+    border: 1px solid #f13848;
+    padding: 15px;
+}
+
+.menu .btn-user:hover {
+    background: #39aaeb;
+}
+
+.menu .btn-user p a {
+    font-size: 26px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
