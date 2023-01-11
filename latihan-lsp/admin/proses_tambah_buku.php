@@ -6,10 +6,11 @@ if($_POST['submit'] == 'submit'){
     $pengarang = $_POST['pengarang'];
     $thn_terbit = $_POST['thn_terbit'];
     $penerbit = $_POST['penerbit'];
+    $harga = $_POST['harga'];
 
 }
 
-if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['pengarang'])||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])){
+if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['pengarang'])||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])||empty($_POST['harga'])){
     ?>
     // warning 
     <script Lang="JavaScript">
@@ -22,7 +23,7 @@ if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['penga
     include '../koneksi.php';
 }
 
-$input = "INSERT INTO buku VALUES (NULL, '$id_katalog','$judul_buku', '$pengarang', '$thn_terbit' , '$penerbit')";
+$input = "INSERT INTO buku VALUES (NULL, '$id_katalog','$judul_buku', '$pengarang', '$thn_terbit' , '$penerbit', '$harga')";
 
 $query_input = mysqli_query($koneksi, $input);
 

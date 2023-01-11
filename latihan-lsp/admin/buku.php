@@ -36,6 +36,10 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
                     if($_SESSION['status']!='login'){
                         header('location:login_admin.php?pesan=belum_login');
                     }
+                    include'../koneksi.php';
+                    $buku = mysqli_query($koneksi, "SELECT * FROM buku");
+                    $jumlah_buku = mysqli_num_rows($buku);
+
                 ?>
                 <a class="btn btn-outline-none">Halo,<?php echo $_SESSION['admin']?></a>
                 <a href="../logout.php" class="btn btn-danger py-2 px-3" style="cursor: pointer;">Logout</a>
@@ -44,8 +48,12 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
         </div>
     </nav>
     <div class="container mt-4">
-    <h3>Data Buku</h3>
+    <h1>Data Buku</h1>
+    
+
+    <h3>Total Buku Tersedia : <?php echo $jumlah_buku; ?></h3>
         <a href="tambah_buku.php" class="btn btn-sm btn-primary mb-3">Tambah Buku</a>
+        <a href="cetak_buku.php" target="_blank" class="btn btn-sm btn-secondary">Cetak</a>
         <table border="1" class="table table-striped">
             <tr>
                 <th>NO</th>
@@ -55,6 +63,7 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
                 <th>Pengarang</th>
                 <th>Tahun Terbit</th>
                 <th>Penerbit</th>
+                <th>Harga</th>
                 <th>Aksi</th>
             </tr>
             <?php $i=1;?>
@@ -66,7 +75,9 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
                 <td><?= $data["judul_buku"];?></td>
                 <td><?= $data["pengarang"];?></td>
                 <td><?= $data["thn_terbit"];?></td>
+
                 <td><?= $data["penerbit"];?></td>
+                <td><?= $data["harga"];?></td>
                 <td>
                     <a href="edit_buku.php?id_buku=<?php echo $data['id_buku'];?>" class="btn btn-sm btn-success">Edit</a>
                     <a href="hapus_buku.php?id=<?=$data['id_buku']?>"onClick="return confirm('Anda Yakin Ingin Hapus Data?')" class="btn btn-sm btn-danger">Hapus</a>
@@ -75,6 +86,17 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
             <?php $i++; ?>
                 <?php endwhile; ?>
         </table>
+        <center><h2> Total Semua Harga Buku :
+                <?php
+                $db = mysqli_query($koneksi, "SELECT * FROM buku;");
+                while ($r = mysqli_fetch_array($db)) {
+                    $harga[] = $r['harga'];
+                }
+                $totalHarga = array_sum($harga);
+                echo "Rp. " . number_format($totalHarga) . " ,-";
+
+                ?>
+            </h2></center>
     </div>
         
         

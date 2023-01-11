@@ -9,10 +9,11 @@ if($_POST['submit'] == 'submit'){
     $pengarang = $_POST['pengarang'];
     $thn_terbit = $_POST['thn_terbit'];
     $penerbit = $_POST['penerbit'];
+    $harga = $_POST['harga'];
 
 }
 
-if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['pengarang'])||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])){
+if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['pengarang'])||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])||empty($_POST['harga'])){
     ?>
     // warning 
     <script Lang="JavaScript">
@@ -25,7 +26,7 @@ if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['penga
     include '../koneksi.php';
 }
 
-$input = "UPDATE buku SET id_katalog='$id_katalog',judul_buku='$judul_buku', pengarang='$pengarang', thn_terbit='$thn_terbit' , penerbit='$penerbit' WHERE id_buku='$id_buku'";
+$input = "UPDATE buku SET id_katalog='$id_katalog',judul_buku='$judul_buku', pengarang='$pengarang', thn_terbit='$thn_terbit' , penerbit='$penerbit', harga='$harga' WHERE id_buku='$id_buku'";
 
 $query_input = mysqli_query($koneksi, $input);
 

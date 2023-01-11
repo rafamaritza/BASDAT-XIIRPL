@@ -61,6 +61,9 @@ $buku = mysqli_query($koneksi, "SELECT * FROM buku");
             <label class="form-label">Penerbit</label>
             <input type="text" name="penerbit" class="form-control">
 
+            <label class="form-label">Harga</label>
+            <input type="text" name="harga" class="form-control">
+
             <input name="submit" type="submit" value="submit" class="mt-3 btn btn-sm btn-primary">
             <input name="reset" type="reset" value="Cancel" class="mt-3 btn btn-sm btn-danger">
         </form>

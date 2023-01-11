@@ -36,6 +36,9 @@ $anggota = mysqli_query($koneksi, "SELECT * FROM anggota");
                     if($_SESSION['status']!='login'){
                         header('location:login_admin.php?pesan=belum_login');
                     }
+                    include'../koneksi.php';
+                    $anggota = mysqli_query($koneksi, "SELECT * FROM anggota");
+                    $jumlah_anggota = mysqli_num_rows($anggota);
                 ?>
                 <a class="btn btn-outline-none">Halo,<?php echo $_SESSION['admin']?></a>
                 <a href="../logout.php" class="btn btn-danger py-2 px-3" style="cursor: pointer;">Logout</a>
@@ -44,7 +47,8 @@ $anggota = mysqli_query($koneksi, "SELECT * FROM anggota");
         </div>
     </nav>
     <div class="container mt-4">
-    <h3>Data Anggota</h3>
+    <h1>Data Anggota</h1>
+    <h3>Total anggota Tersedia : <?php echo $jumlah_anggota; ?></h3>
         <a href="tambah_anggota.php" class="btn btn-sm btn-primary mb-3">Tambah Anggota</a>
         <table border="1" class="table table-striped">
             <tr>
@@ -54,7 +58,6 @@ $anggota = mysqli_query($koneksi, "SELECT * FROM anggota");
                 <th>Alamat</th>
                 <th>Email</th>
                 <th>Password</th>
-                <th>Aksi</th>
             </tr>
             <?php $i=1;?>
                 <?php while($data=mysqli_fetch_array($anggota)): ?>
@@ -65,10 +68,7 @@ $anggota = mysqli_query($koneksi, "SELECT * FROM anggota");
                 <td><?= $data["alamat"];?></td>
                 <td><?= $data["email"];?></td>
                 <td><?= $data["password"];?></td>
-                <td>
-                    <a href="hapus.php?id=<?=$data['id_anggota']?>"onClick="return confirm('Anda Yakin Ingin Hapus Data?')" class="btn btn-sm btn-danger">Hapus</a>
-                    <a href="edit.php" class="btn btn-sm btn-success">Edit</a>
-                </td>
+                
             </tr>
             <?php $i++; ?>
                 <?php endwhile; ?>
